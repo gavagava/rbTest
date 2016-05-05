@@ -1,0 +1,9 @@
+{
+  "name": "mailboxapp",
+  "description": "A mailbox application",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0"
+  }
+}
