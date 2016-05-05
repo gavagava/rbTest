@@ -6,13 +6,15 @@
   <title>Mailbox App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="emailEditor/emailEditor.css">
 </head>
-<body>
+<body ng-controller="MyAppBaseCtrl">
   <div class="app-editor-title">Share "Board name" with others</div>
-  <email-editor></email-editor>
+  <email-editor id="ee1"></email-editor>
   <button ng-click="addEmails()">add random email</button>
   <button ng-click="getEmailsCount()">get emails count</button>
   <script src="bower_components/angular/angular.js"></script>
+  <script src="emailEditor/emailEditor.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

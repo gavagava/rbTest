@@ -1,0 +1,8 @@
+<div class="rbt-mail-editor">
+    <div class="rbt-mail"
+         ng-repeat="mail in mails">
+        <span>{{mail}}</span>
+        <span class="rbt-mail-remove" ng-click="removeMail($index)">[X]</span>
+    </div>
+    <textarea ng-model="userInput" ng-change="onUserInputChange()" ng-blur="onUserInputBlur()" class="rbt-mail-input" placeholder="add more people..."></textarea>
+</div>
