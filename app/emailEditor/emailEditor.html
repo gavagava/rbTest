@@ -1,8 +1,8 @@
 <div class="rbt-mail-editor">
     <div class="rbt-mail"
          ng-repeat="mail in mails">
-        <span>{{mail}}</span>
-        <span class="rbt-mail-remove" ng-click="removeMail($index)">[X]</span>
+        <span class="rbt-mail-name" ng-class="{'rbt-mail-invalid': !isEmail(mail)}">{{mail}}</span>
+        <img class="rbt-remove-mail" ng-click="removeMail($index)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAERJREFUKFNjiI9P+A/CDEDw//9/GGaCi0MlwRyYAmQxkAAjsgAyGyQHMxKuCFkSJEeUAvxWoAuga4B7EyqJYmV8fMJ/ALOOi+plXB8KAAAAAElFTkSuQmCC"/>
     </div>
     <textarea ng-model="userInput" ng-change="onUserInputChange()" ng-blur="onUserInputBlur()" class="rbt-mail-input" placeholder="add more people..."></textarea>
 </div>

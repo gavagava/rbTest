@@ -1,0 +1,19 @@
+.rbt-mail-invalid {
+    border-bottom: 2px dotted red;
+}
+
+.rbt-remove-mail {
+    margin-left: 5px;
+}
+
+.rbt-mail {
+    background: #D9E8FF;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+
+textarea.rbt-mail-input {
+    display: inline-block;
+    border: none;
+}
