@@ -1,17 +1,35 @@
 /* app css stylesheet */
 
 html {
-    font-family: Calibri;
+    font-family: Calibri serif;
+}
+
+.app-email-view {
+    background: #F5F5F5;
+    padding: 40px;
+}
+
+.app-email-view > email-editor {
+    margin-top: 35px;
+    background: white;
+    display: block;
+    border-top: 1px solid #CCCCCC;
 }
 
 .app-editor-title {
     font-size: 20px;
 }
 
-button {
+.app-button-block {
+    background: white;
+    padding: 30px 40px;
+}
+
+.app-button-block > button {
     border: #6699ff;
     height: 30px;
     background: #6699ff;
     color: white;
     border-radius: 3px;
+    margin-right: 20px;
 }

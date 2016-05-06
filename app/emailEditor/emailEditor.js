@@ -9,12 +9,7 @@ angular.module('rbTest.mailbox', [])
             scope: {},
             templateUrl: 'emailEditor/emailEditor.html',
             controller: 'MailboxCtrl',
-            controllerAs: 'ctrl',
-            link: function (scope, el, attrs, ctrl) {
-                scope.$watch('text', function (newText) {
-                    ctrl.makeBlocks(newText);
-                });
-            }
+            controllerAs: 'ctrl'
         }
     })
     .controller('MailboxCtrl', ['$scope', function ($scope) {

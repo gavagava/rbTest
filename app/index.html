@@ -9,10 +9,14 @@
   <link rel="stylesheet" href="emailEditor/emailEditor.css">
 </head>
 <body ng-controller="MyAppBaseCtrl">
-  <div class="app-editor-title">Share "Board name" with others</div>
-  <email-editor id="ee1"></email-editor>
-  <button ng-click="addEmails()">add random email</button>
-  <button ng-click="getEmailsCount()">get emails count</button>
+  <div class="app-email-view" style="width: 420px;">
+    <div class="app-editor-title">Share "Board name" with others</div>
+    <email-editor style="width:420px; height: 100px;" id="ee1"></email-editor>
+  </div>
+  <div class="app-button-block" style="width: 420px;">
+    <button ng-click="addEmails()">Add email</button>
+    <button ng-click="getEmailsCount()">Get emails count</button>
+  </div>
   <script src="bower_components/angular/angular.js"></script>
   <script src="emailEditor/emailEditor.js"></script>
   <script src="app.js"></script>
