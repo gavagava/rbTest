@@ -1,12 +1,12 @@
 /* app css stylesheet */
 
 html {
-    font-family: Calibri serif;
+    font-family: Calibri, serif;
 }
 
 .app-email-view {
     background: #F5F5F5;
-    padding: 40px;
+    padding: 30px 40px;
 }
 
 .app-email-view > email-editor {
